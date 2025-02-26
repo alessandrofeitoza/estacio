@@ -1,3 +1,8 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
 a {
     background-color: #333;
     color: #fff;
@@ -10,4 +15,31 @@ a:hover {
     background-color: #555;
     font-size: 0.9rem;
     transition: 1s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #666;
+    color: #FFF;
+}
+
+tbody > tr:hover {
+    background-color: #CCC;
+}
+
+div.principal {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.lado1 {
+    background-color: #CCC;
+}
+
+div.lado2 {
+    /* background-color: #6fa8dc; */
 }
