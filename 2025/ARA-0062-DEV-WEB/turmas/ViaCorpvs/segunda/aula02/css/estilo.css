@@ -1,0 +1,44 @@
+body {
+    background-color: #BBB;
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    background-color: #FFF;
+    width: 30%;
+    margin: auto;
+    margin-top: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.5);
+}
+
+input {
+    width: 98%;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #BBB;
+    padding-left: 6px;
+}
+
+hr {
+    margin-bottom: 15px;
+    border: 0.5px solid #DDD;
+    width: 98%;
+}
+
+button {
+    background-color: #555;
+    color: #FFF;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 6px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #333;
+}

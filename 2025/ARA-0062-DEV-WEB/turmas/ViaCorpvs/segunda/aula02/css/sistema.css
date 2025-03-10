@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    text-align: right;
+}
+
+a {
+    border: 1px solid #444;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: #444;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #444;
+    color: #FFF;
+}
+
+i {
+    vertical-align: text-bottom;
+}
