@@ -114,6 +114,21 @@ Coisas como: cliques, arrastar e soltar, digitar, duplo clique, envio de formul√
 <td>Tutorial Web</td>
 <td><a href="https://www.w3schools.com/js/default.asp">w3schools.com/js/</a></td>
 </tr>
+<tr>
+<td>Site de Cores</td>
+<td>ColorHex</td>
+<td><a href="https://color-hex.com">color-hex.com/</a></td>
+</tr>
+<tr>
+<td>Fontes para o texto</td>
+<td>Google Fonts</td>
+<td><a href="https://fonts.google.com">fonts.google.com</a></td>
+</tr>
+<tr>
+<td>Banco de Imagens</td>
+<td>Undraw</td>
+<td><a href="https://www.undraw.co">undraw.co</a></td>
+</tr>
 </tbody>
 </table>
 
