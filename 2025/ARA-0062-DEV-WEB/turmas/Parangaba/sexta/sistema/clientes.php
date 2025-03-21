@@ -1,24 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+<?php include 'partes/head.php'; ?>
+<?php include 'partes/menu.php'; ?>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/custom.css">
-    </head>
-    <body class="px-3">
-        <hr>
-        <nav class="text-end">
-            <a class="btn btn-outline-dark" href="dashboard.html">Dashboard</a>
-            <a class="btn btn-outline-dark" href="clientes.html">Clientes</a>
-            <a class="btn btn-outline-dark" href="produtos.html">Produtos</a>
-            <a class="btn btn-outline-dark" href="pedidos.html">Pedidos</a>
-            <a class="btn btn-outline-danger" href="index.html">Sair</a>
-        </nav>
-        <hr>
 
         <section class="card card-body">
             <div class="row">
@@ -148,6 +130,4 @@
         </section>
         
         
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
-</html>
+        <?php include 'partes/head.php'; ?>
