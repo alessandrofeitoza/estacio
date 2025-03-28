@@ -2,6 +2,7 @@
 <?php include 'partes/menu.php'; ?>
 
 <?php
+
     //array associativo
     $dados = [
         'id' => 1,
@@ -94,19 +95,17 @@
                 <tbody>
                     <?php
                         foreach($pessoas as $cada) {
-                            echo "
-                                <tr>
-                                    <td>{$cada['id']}</td>
-                                    <td>{$cada['nome']}</td>
-                                    <td>{$cada['email']}</td>
-                                    <td>{$cada['telefone']}</td>
-                                    <td>{$cada['cidade']}</td>
-                                    <td>
-                                        <a href='' class='btn btn-sm btn-warning'>Editar</a>
-                                        <a href='' class='btn btn-sm btn-danger'>Excluir</a>
-                                    </td>
-                                </tr>
-                            ";
+                            echo "<tr>
+                                <td>{$cada['id']}</td>
+                                <td>{$cada['nome']}</td>
+                                <td>{$cada['email']}</td>
+                                <td>{$cada['telefone']}</td>
+                                <td>{$cada['cidade']}</td>
+                                <td>
+                                    <a href='' class='btn btn-sm btn-warning'>Editar</a>
+                                    <a href='' class='btn btn-sm btn-danger'>Excluir</a>
+                                </td>
+                            </tr>";
                         }
                     ?>
                 </tbody>

@@ -1,6 +1,18 @@
 <?php include 'partes/head.php'; ?>
 <?php include 'partes/menu.php'; ?>
 
+<?php
+    $produtos = [
+        [
+            'id' => 1,
+            'nome' => 'Heineken',
+            'imagem' => 'https://carrefourbrfood.vtexassets.com/arquivos/ids/97519658/cachaca-ypioca-conta-gota-ouro-965ml-2.jpg?v=638100855886670000',
+            'preco' => '',
+            'quantidade' => '',
+            'descricao' => '',
+        ],
+    ];
+?> 
         
 <section class="card card-body">
     <div class="row">
