@@ -1,6 +1,46 @@
 <?php include 'partes/head.php'; ?>
 <?php include 'partes/menu.php'; ?>
 
+<?php
+    //array
+    $alunos = [
+        'Vitor',
+        'Lucas',
+        'Eduarda',
+    ];
+
+    $alunos[] = 'Matheus';
+    $alunos[10] = 'Davi';
+    $alunos[] = 'Kayane';
+    $alunos[4] = 'Gabriel';
+
+    foreach ($alunos as $cada) {
+        echo "{$cada} <br>";
+    }
+
+    // echo '<pre>';
+    // print_r($alunos);
+    // echo '</pre>';
+
+    //array associativo
+    $dados = [
+        'nome' => 'Chiquim',
+        'email' => 'chiquim@email.com',
+        'telefone' => '85 9 8612-1234',
+        'cidade' => 'Fortaleza',
+    ];
+    $dados2 = [
+        'nome' => 'Maria',
+        'email' => 'maria@email.com',
+        'telefone' => '85 9 9987-1234',
+        'cidade' => 'Madalena',
+    ];
+
+    $pessoas = [
+        $dados,
+        $dados2,
+    ];
+?>
 
         <section class="card card-body">
             <div class="row">
