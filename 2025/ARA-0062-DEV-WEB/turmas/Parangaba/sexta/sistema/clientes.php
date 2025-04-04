@@ -2,26 +2,15 @@
 <?php include 'partes/menu.php'; ?>
 
 <?php
-    //array associativo
-    $dados = [
-        'id' => 1,
-        'nome' => 'Chiquim',
-        'email' => 'chiquim@email.com',
-        'telefone' => '85 9 8612-1234',
-        'cidade' => 'Fortaleza',
-    ];
-    $dados2 = [
-        'id' => 2,
-        'nome' => 'Maria',
-        'email' => 'maria@email.com',
-        'telefone' => '85 9 9987-1234',
-        'cidade' => 'Madalena',
-    ];
+    $conexao = new PDO(
+        'mysql:host=localhost;dbname=db_fic_bebo', 
+        'alessandro', 
+        'livre'
+    );
+    
+    $query = 'SELECT * FROM tb_cliente';
 
-    $pessoas = [
-        $dados,
-        $dados2,
-    ];
+    $pessoas = $conexao->query($query)->fetchAll();
 ?>
 
         <section class="card card-body">
