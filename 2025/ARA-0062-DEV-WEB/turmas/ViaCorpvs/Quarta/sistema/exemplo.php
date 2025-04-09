@@ -21,6 +21,29 @@
         <button class="btn btn-success">teste</button>
 
 
+        <p>Estude e garanta:</p>
+<ol type="I">
+    <li>Depressao</li>
+    <li>Ansiedade</li>
+    <li>Angustia</li>
+    <li>Liseira</li>
+    <li>Dividas</li>
+</ol>
+
+<p>Escolha o Turno</p>
+
+<label for="a">Manha</label> 
+<input id="a" name="turno" type="radio"><br>
+
+<label for="b">Tarde</label> 
+<input id="b" name="turno" type="radio"><br>
+
+<label for="c">Noite</label> 
+<input id="c" name="turno" type="radio"><br>
+
+
+Foto: <input type="file">
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

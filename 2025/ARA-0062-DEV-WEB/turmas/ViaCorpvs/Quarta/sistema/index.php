@@ -1,5 +1,7 @@
 <?php include 'views/head.php'; ?>
 
+
+
 <div class="row mt-5">
     <div class="col-4 offset-4 mt-5">
         <div class="card card-body mt-5 shadow">

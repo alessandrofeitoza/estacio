@@ -61,90 +61,105 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>Chiquim</td>
-                <td>chiquim@email.com</td>
-                <td>85 9 1231-1234</td>
-                <td>Rua Vicente Leite, 1010</td>
-                <td>Cliente bonequeiro</td>
-                <td>
-                    <a href="" class="btn btn-sm btn-warning">Editar</a>
-                    <a href="" class="btn btn-sm btn-danger">Excluir</a>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Maria</td>
-                <td>maria@email.com</td>
-                <td>85 9 1231-1234</td>
-                <td>Rua Osvaldo Cruz, 1090</td>
-                <td>...</td>
-                <td>
-                    <a href="" class="btn btn-sm btn-warning">Editar</a>
-                    <a href="" class="btn btn-sm btn-danger">Excluir</a>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Maria</td>
-                <td>maria@email.com</td>
-                <td>85 9 1231-1234</td>
-                <td>Rua Osvaldo Cruz, 1090</td>
-                <td>...</td>
-                <td>
-                    <a href="" class="btn btn-sm btn-warning">Editar</a>
-                    <a href="" class="btn btn-sm btn-danger">Excluir</a>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Maria</td>
-                <td>maria@email.com</td>
-                <td>85 9 1231-1234</td>
-                <td>Rua Osvaldo Cruz, 1090</td>
-                <td>...</td>
-                <td>
-                    <a href="" class="btn btn-sm btn-warning">Editar</a>
-                    <a href="" class="btn btn-sm btn-danger">Excluir</a>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Maria</td>
-                <td>maria@email.com</td>
-                <td>85 9 1231-1234</td>
-                <td>Rua Osvaldo Cruz, 1090</td>
-                <td>...</td>
-                <td>
-                    <a href="" class="btn btn-sm btn-warning">Editar</a>
-                    <a href="" class="btn btn-sm btn-danger">Excluir</a>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Maria</td>
-                <td>maria@email.com</td>
-                <td>85 9 1231-1234</td>
-                <td>Rua Osvaldo Cruz, 1090</td>
-                <td>...</td>
-                <td>
-                    <a href="" class="btn btn-sm btn-warning">Editar</a>
-                    <a href="" class="btn btn-sm btn-danger">Excluir</a>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Maria</td>
-                <td>maria@email.com</td>
-                <td>85 9 1231-1234</td>
-                <td>Rua Osvaldo Cruz, 1090</td>
-                <td>...</td>
-                <td>
-                    <a href="" class="btn btn-sm btn-warning">Editar</a>
-                    <a href="" class="btn btn-sm btn-danger">Excluir</a>
-                </td>
-            </tr>
+            <?php
+            //esses dados vao vir do banco
+            $clientes = [
+                [
+                    'id' => 1,
+                    'nome' => 'Chiquim',
+                    'endereco' => 'Jurema, Caucaia',
+                    'email' => 'chiquim@email.com',
+                    'telefones' => '(85) 9 8674-0502',
+                    'observacao' => 'Cliente bom',
+                ],
+                [
+                    'id' => 2,
+                    'nome' => 'Maria Silva',
+                    'endereco' => 'Rua das Flores, Fortaleza',
+                    'email' => 'maria.silva@email.com',
+                    'telefone' => '(85) 9 9988-1234',
+                    'observacao' => 'Sempre pontual nos pagamentos',
+                ],
+                [
+                    'id' => 3,
+                    'nome' => 'João Pereira',
+                    'endereco' => 'Av. Central, Juazeiro do Norte',
+                    'email' => 'joao.pereira@email.com',
+                    'telefone' => '(88) 9 2345-6789',
+                    'observacao' => 'Cliente exigente',
+                ],
+                [
+                    'id' => 4,
+                    'nome' => 'Ana Costa',
+                    'endereco' => 'Rua dos Ipês, Sobral',
+                    'email' => 'ana.costa@email.com',
+                    'telefone' => '(88) 9 3456-7890',
+                    'observacao' => 'Cliente de longo prazo',
+                ],
+                [
+                    'id' => 5,
+                    'nome' => 'Carlos Souza',
+                    'endereco' => 'Avenida Beira Mar, Fortaleza',
+                    'email' => 'carlos.souza@email.com',
+                    'telefone' => '(85) 9 9876-5432',
+                    'observacao' => 'Gosta de novidades',
+                ],
+                [
+                    'id' => 6,
+                    'nome' => 'Fernanda Lima',
+                    'endereco' => 'Praia das Fontes, Beberibe',
+                    'email' => 'fernanda.lima@email.com',
+                    'telefone' => '(85) 9 1234-5678',
+                    'observacao' => 'Sempre solicita',
+                ],
+                [
+                    'id' => 7,
+                    'nome' => 'Ricardo Gomes',
+                    'endereco' => 'Rua da Paz, Crato',
+                    'email' => 'ricardo.gomes@email.com',
+                    'telefone' => '(88) 9 6543-2109',
+                    'observacao' => 'Muito organizado',
+                ],
+                [
+                    'id' => 8,
+                    'nome' => 'Juliana Rocha',
+                    'endereco' => 'Rua do Sol, Maracanaú',
+                    'email' => 'juliana.rocha@email.com',
+                    'telefone' => '(85) 9 8765-4321',
+                    'observacao' => 'Cliente fiel',
+                ],
+                [
+                    'id' => 9,
+                    'nome' => 'Paulo Henrique',
+                    'endereco' => 'Av. Domingos Olímpio, Fortaleza',
+                    'email' => 'paulo.henrique@email.com',
+                    'telefone' => '(85) 9 1122-3344',
+                    'observacao' => 'Reclama muito, mas sempre paga',
+                ],
+                [
+                    'id' => 10,
+                    'nome' => 'Lucas Martins',
+                    'endereco' => 'Rua São José, Caucaia',
+                    'email' => 'lucas.martins@email.com',
+                    'telefone' => '(85) 9 5566-7788',
+                    'observacao' => 'Cliente recente',
+                ],
+            ];
+            
+            foreach ($clientes as $cada) {
+                echo "
+                    <tr>
+                        <td>{$cada['id']}</td>
+                        <td>{$cada['nome']}</td>
+                        <td>{$cada['email']}</td>
+                        <td>{$cada['telefone']}</td>
+                        <td>{$cada['endereco']}</td>
+                        <td>{$cada['obs']}</td>
+                    </tr>
+                ";
+            }
+
+            ?>
 
         </tbody>
 
