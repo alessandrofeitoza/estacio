@@ -2,16 +2,11 @@
 <?php include 'partes/menu.php'; ?>
 
 <?php
-    $produtos = [
-        [
-            'id' => 1,
-            'nome' => 'Heineken',
-            'imagem' => 'https://carrefourbrfood.vtexassets.com/arquivos/ids/97519658/cachaca-ypioca-conta-gota-ouro-965ml-2.jpg?v=638100855886670000',
-            'preco' => '',
-            'quantidade' => '',
-            'descricao' => '',
-        ],
-    ];
+    $conexao = include 'utils/conexao.php';
+
+    $sql = 'SELECT * FROM tb_produto';
+
+    $produtos = $conexao->query($sql)->fetchAll();
 ?> 
         
 <section class="card card-body">
@@ -84,21 +79,27 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>Ypioca</td>
-                <td>Destilados</td>
-                <td> 
-                    <img width="70px" src="https://carrefourbrfood.vtexassets.com/arquivos/ids/97519658/cachaca-ypioca-conta-gota-ouro-965ml-2.jpg?v=638100855886670000"> 
-                </td>
-                <td>Prata, 960ml</td>
-                <td>R$ 10.90</td>
-                <td>18</td>
-                <td>
-                    <a href="" class="btn btn-sm btn-warning">Editar</a>
-                    <a href="" class="btn btn-sm btn-danger">Excluir</a>
-                </td>
-            </tr>
+            <?php
+                foreach ($produtos as $cada) {
+                    echo "
+                    <tr>
+                        <td>{$cada['id']}</td>
+                        <td>{$cada['nome']}</td>
+                        <td>{$cada['descricao']}</td>
+                        <td> 
+                            <img width='70px' src='{$cada['imagem']}'> 
+                        </td>
+                        <td>Prata, 960ml</td>
+                        <td>R$ 10.90</td>
+                        <td>18</td>
+                        <td>
+                            <a href='#' class='btn btn-sm btn-warning'>Editar</a>
+                            <a href='#' class='btn btn-sm btn-danger'>Excluir</a>
+                        </td>
+                    </tr>
+                    ";
+                }
+            ?>
             
         </tbody>
     </table>

@@ -2,11 +2,7 @@
 <?php include 'partes/menu.php'; ?>
 
 <?php
-    $conexao = new PDO(
-        'mysql:host=localhost;dbname=db_fic_bebo', 
-        'alessandro', 
-        'livre'
-    );
+    $conexao = include 'utils/conexao.php';
     
     $query = 'SELECT * FROM tb_cliente';
 
@@ -92,7 +88,7 @@
                                     <td>{$cada['cidade']}</td>
                                     <td>
                                         <a href='' class='btn btn-sm btn-warning'>Editar</a>
-                                        <a href='' class='btn btn-sm btn-danger'>Excluir</a>
+                                        <a href='excluir-cliente.php?id={$cada['id']}' class='btn btn-sm btn-danger'>Excluir</a>
                                     </td>
                                 </tr>
                             ";

@@ -36,7 +36,7 @@ CREATE TABLE tb_produto(
     categoria VARCHAR(20) NOT NULL,
     descricao VARCHAR(100) NOT NULL,
     imagem VARCHAR(255),
-    preco DECIMAL(3,2) NOT NULL,
+    preco DECIMAL NOT NULL,
     quantidade INT(3) NOT NULL
 );
 
@@ -51,6 +51,11 @@ VALUES
 SELECT * FROM tb_cliente;
 
 
+
+
+INSERT INTO tb_produto (nome, categoria, descricao, imagem, preco, quantidade) VALUES
+('Café Torrado', 'Bebidas', 'Café 100% arábica, torrado e moído, embalagem de 500g.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXPAbbWR6mo54cBuLhToEqRMSyW1IrAPsRsHm9S-Z-12LoIHUB5u3o1Yt63sto6RMm0Y4&usqp=CAU', 19, 50),
+('Notebook A15', 'Eletrônicos', 'Notebook com 8GB RAM, SSD 256GB e tela 15.6".', 'https://media.istockphoto.com/id/1394988455/pt/foto/laptop-with-a-blank-screen-on-a-white-background.jpg', 99, 10);
 
 
 
