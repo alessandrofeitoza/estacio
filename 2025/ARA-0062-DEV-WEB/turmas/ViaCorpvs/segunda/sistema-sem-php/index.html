@@ -22,9 +22,19 @@
             <div class="card card-body shadow">
                 <h2>Login</h2>
                 <hr>
+
+                <div id="erro_email" style="display: none;" class="alert alert-danger">
+                    <strong>Ops!</strong>
+                    Email Invalido
+                </div>
+                <div id="erro_senha" style="display: none;" class="alert alert-danger">
+                    <strong>Ops!</strong>
+                    Senha Invalida
+                </div>
+
                 <form  action="dashboard.html">
-                    <input class="form-control mb-2" placeholder="Email" type="email">
-                    <input class="form-control mb-3" placeholder="Senha" type="password">
+                    <input oninput="esconderErroEmail()" id="email" class="form-control mb-2" placeholder="Email" type="email">
+                    <input oninput="esconderErroSenha()" id="senha" class="form-control mb-3" placeholder="Senha" type="password">
                     <button onclick="enviar()" class="btn btn-primary w-100">ENTRAR</button>
 
                     <div class="mt-3 text-center">
