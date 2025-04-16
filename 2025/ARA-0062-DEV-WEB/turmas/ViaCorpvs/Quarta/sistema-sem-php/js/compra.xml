@@ -1,0 +1,10 @@
+<Cartao>
+    <Numero>1234 1234 1234 1235</Numero>
+    <CVV>123</CVV>
+    <Validade>12/31</Validade>
+    <Cliente>
+        <Nome>FRANCISCO A F SILVA</Nome>
+        <CPF>123.123.123-23</CPF>
+    </Cliente>
+    <Valor>139.99</Valor>
+</Cartao>

@@ -1,0 +1,10 @@
+{
+    "numero": "1234 1234 1234 1234",
+    "cvv": "123",
+    "validade": "12/31",
+    "cliente": {
+        "nome": "FRANCISCO A F SILVA",
+        "cpf": "123.123.123-12"
+    },
+    "valor": 139.99
+}

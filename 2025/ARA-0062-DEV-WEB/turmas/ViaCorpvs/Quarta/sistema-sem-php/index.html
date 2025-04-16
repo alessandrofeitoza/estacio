@@ -72,7 +72,14 @@
             INPUT_SENHA.style.border = '1px solid red';
             document.getElementById('erro_senha').style.display = 'block';
         }
-    }
+
+        if (
+            INPUT_EMAIL.value !== '' && 
+            INPUT_SENHA.value !== ''
+        ) {
+            location.href = 'dashboard.html';
+        }
+    } //fim da função
 
 </script>
 
