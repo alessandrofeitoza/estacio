@@ -1,0 +1,11 @@
+- Percorrer os numeros de 1 a 100
+- Mostrando so os pares
+
+for (let n = 0; n <= 3; n++) {
+    document.write(n + '<br>');
+}
+
+1
+2
+3
+4
