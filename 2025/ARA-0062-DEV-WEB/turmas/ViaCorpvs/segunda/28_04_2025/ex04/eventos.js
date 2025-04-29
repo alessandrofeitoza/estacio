@@ -1,15 +1,23 @@
 for (let n = 1; n <= 100; n++) {
-    document.write(n + ' - ');
+    output(n + ' - ');
 
     if (n % 2 === 0) {
-        document.write('Arri');
+        output('Arri');
     }
 
     if (n % 5 === 0) {
-        document.write('Egua');
+        output('Egua');
     }
 
-    document.write('<br>');
+    output('<br>'); 
+}
 
+
+function output(content) {
+    if (window.browser) {
+        document.write(content);
+    } else {
+        console.log(content);
+    }
 }
 
