@@ -76,7 +76,9 @@ function buscar() {
     let texto = document.getElementById('busca').value;
 
     let filtrado = clientes.filter(cada => {
-        return cada.nome.includes(texto);
+        let nome = cada.nome.toLowerCase();
+
+        return nome.includes(texto.toLowerCase());
     });
 
     TABELA.innerHTML = '';
